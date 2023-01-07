@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+.body{
+    background-color: #ecf2f8;
+    width:100%;
+    margin:10% 3%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+.card{
+    margin:auto;
+    width:350px;    
+    display: flex;
+    flex-direction: column;
+}
+.grid{
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 9px 1px rgba(0,0,0,1);
+    border-radius: 5px;
+}
+.left-part{
+
+    display:flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+}
+.top-left{
+    position: relative;
+    z-index: 1;
+    color:#ffffff;
+    flex-basis: 60%;
+    background-color:#7541c8;
+}
+p,span,div,img{
+    margin: 0;
+}
+.top-right{
+    color:#ffffff;
+    flex-basis: 40%;
+    background-color:	#48556a;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+}
+.bottom-left,.right-part{
+    color:#48556a;
+    background-color: #ffffff;
+}
+.bottom-right{
+    color:#ffffff;
+    flex-basis: 60%;
+    background-color:#19212e;
+}
+.header{
+    position: relative;
+    z-index: 2;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header img{
+    border-radius: 50%;
+    margin-right: 5px;
+}
+span{
+    margin: 0;
+    opacity: 50%;
+}
+p{
+    opacity: 0.7;
+    font-size: 0.75rem;
+}
+.header p{
+    margin: 0;
+    font-weight: 600;
+    opacity: 1;
+}
+.quote{
+    opacity: 1;
+    z-index:2;
+    position: absolute;
+    top: 0;
+    right: 15%;
+}
+@media (min-width:575px) {
+    .body{
+        width:100%;
+        margin:1%;
+    }
+    .grid{
+        padding: 20px;
+        margin-left: 15px;
+    }
+    .card{
+        max-width :1050px;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        margin:0 auto;
+    }
+    .left-part{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 75%;
+    }
+    .top,.bottom{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+    .top-left,.bottom-right{
+        flex-basis: 70%;
+    }
+    .top-right,.bottom-left{
+        flex-basis: 30%;
+    }
+    .right-part{
+        flex-basis: 25%;
+    }
+}
