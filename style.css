@@ -4,7 +4,7 @@
 .body{
     background-color: #ecf2f8;
     width:100%;
-    margin:10% 3%;
+    margin:auto;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
 }
@@ -88,10 +88,9 @@ p{
     top: 0;
     right: 15%;
 }
-@media (min-width:575px) {
+@media (min-width:375px) {
     .body{
         width:100%;
-        margin:1%;
     }
     .grid{
         padding: 20px;
